@@ -24,6 +24,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common CarbonROM stuff.
 $(call inherit-product, vendor/carbon/config/common.mk)
 $(call inherit-product, vendor/carbon/config/gsm.mk)
+# Include Official OTA Package
+WITH_OFFICIALOTA := true
+
+# Inherit some common PureFusionOs stuff.
+$(call inherit-product, vendor/pure/configs/pure_phone.mk)
 
 # Inherit from land device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
