@@ -49,6 +49,7 @@ TARGET_KERNEL_APPEND_DTB := true
 
 TARGET_KERNEL_CONFIG := lineageos_land_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/msm8937
+KERNEL_TOOLCHAIN_PREFIX :=$(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-
 
 # ANT
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
